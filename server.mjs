@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import Bear from './models/bear';
 
 let app = express();
-let port = 3000;
+const port = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
 
