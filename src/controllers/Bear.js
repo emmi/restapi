@@ -1,6 +1,10 @@
 import Bear from '../models/bear';
 import { replyFunction } from '../utils/reply';
 
+export const sum = (a, b) => {
+    return a + b;
+};
+
 const bearFunction = {
     handler: (request, reply) => {
         Bear.find(function(err, bears) {
